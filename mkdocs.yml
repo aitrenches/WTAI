@@ -1,6 +1,6 @@
 site_name: WTAI
-site_url: https://<your-username>.github.io/WTAI/
-repo_url: https://github.com/<your-username>/WTAI
+site_url: https://github.com/Adrianthebeloved/WTAI
+repo_url: https://github.com/Adrianthebeloved/WTAI
 theme:
   name: material
   features:
@@ -37,7 +37,7 @@ extra_javascript:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/<your-username>/WTAI
+      link: https://github.com/Adrianthebeloved/WTAI
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
