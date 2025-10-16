@@ -1,11 +1,11 @@
-# Day 4 — Hour 1: Why Now? Business Value from Data + AI
+# Why Now? Business Value from Data + AI
 
-## Introduction & setting the stage (0:00–0:05)
+## Introduction & setting the stage
 Good morning and welcome to Day 4 of the Advanced Data Management Masterclass. Over the next two days, we connect modern data and AI capabilities directly to business outcomes. Today is about moving from strategy to an operating model. By the end of the day, you will have designed a 90‑day pilot for your organization.
 
 In this first hour we answer: Why now? Why is this more urgent than three or five years ago? We anchor the discussion in business value and learn to translate every data initiative into clear impact on key performance indicators (KPIs).
 
-## The convergence: three forces driving change (0:05–0:20)
+## The convergence: three forces driving change
 ### 1) Economic drivers
 - Oil & Gas: maximize operational efficiency, improve safety, navigate the energy transition. Targets include reducing OPEX, increasing production uptime, and minimizing environmental impact.
 - Telecommunications: reduce churn and defend ARPU in a hyper‑competitive market.
@@ -15,10 +15,10 @@ In this first hour we answer: Why now? Why is this more urgent than three or fiv
 Cloud storage/compute costs have dropped. Modern architectural patterns like the lakehouse let us process, store, and analyze petabyte‑scale sensor data in near real‑time—formerly cost‑prohibitive.
 
 ### 3) AI accessibility
-Large Language Models and Retrieval‑Augmented Generation (RAG) unlock value from unstructured data such as maintenance reports, safety manuals, and geological surveys. Locally, N‑ATLAS supports Yoruba, Hausa, Igbo, and Nigerian‑accented English, making AI directly applicable to field operations in Nigeria.
+Large Language Models and Retrieval‑Augmented Generation (RAG{:abbr="Retrieval‑Augmented Generation"}) unlock value from unstructured data such as maintenance reports, safety manuals, and geological surveys. Locally, N‑ATLAS supports Yoruba, Hausa, Igbo, and Nigerian‑accented English, making AI directly applicable to field operations in Nigeria.
 
-## Speaking the language of value: KPI trees (0:20–0:40)
-Use KPI Trees to deconstruct a strategic objective into measurable drivers that data/AI can influence.
+## Speaking the language of value: KPI trees
+This KPI Tree deconstructs a strategic objective into measurable drivers that data/AI can influence.
 
 ```mermaid
 graph TD
@@ -32,6 +32,17 @@ graph TD
 ```
 
 Interpretation: the board‑level goal “Improve Financial Performance” cascades to concrete levers. Following the OPEX path: improving production uptime reduces unplanned downtime, which we influence by predicting equipment failure.
+
+KPI tree to architecture mapping
+```mermaid
+flowchart LR
+  KPI[Reduce Unplanned Downtime] --> UseCase[PdM Alerts]
+  UseCase --> Arch[Streaming + Lakehouse]
+  Arch --> DataProducts[Telemetry + Work Orders]
+  DataProducts --> Contract[Data Contracts + SLOs]
+  Contract --> Controls[ABAC + Lineage + Quality]
+  Controls --> Pilot[90‑Day Pilot Target]
+```
 
 ### Cross‑industry patterns
 - Telecommunications: Reduce Churn → Increase Customer Satisfaction → Proactive Retention Offers → Predict Churn Intent.

@@ -1,8 +1,8 @@
 # Cross-Industry Case Studies
 
-These case studies provide concrete examples that we will analyze throughout the masterclass. They are designed for a mixed audience, from executives to engineers, with a primary focus on Oil & Gas but with direct parallels to Telecommunications and Renewable Energy in Nigeria.
+These case studies will be referenced across Day 4 and Day 5 to connect strategy, architecture, governance, compliance, and platform execution. Each example maps value to KPI trees, defines data products and contracts, specifies SLO/SLI reliability targets, and identifies controls under the federated governance model.
 
-**Learning Objective (Analyze):** Deconstruct each use case into its constituent data products, contracts, SLOs, and governance controls to understand its impact on KPIs and the underlying platform.
+**Learning Objective (Analyze):** Deconstruct each use case into data products, contracts, SLOs, controls, and platform components; quantify KPI impact and outline a 90‑day pilot.
 
 ---
 
@@ -15,20 +15,35 @@ These case studies provide concrete examples that we will analyze throughout the
     - **Emissions Reporting Product**: Flaring volume and environmental data.
 - **Key Controls**: Attribute-Based Access Control (ABAC) on specific wells; strict PII segregation in personnel logs; end-to-end data lineage for auditing emissions reports.
 - **Target KPIs**: Increase equipment uptime by **+2-4%**, reduce OPEX by **-5-8%**, and reduce flaring volumes by **-10-20%**.
-- **Architecture**: A streaming ingestion path feeding a medallion lakehouse architecture, with a feature store for ML models and a RAG implementation for accessing standard operating procedures (SOPs).
+- **Architecture**: Streaming ingestion → Medallion Lakehouse (Bronze/Silver/Gold) → Feature Store for PdM → RAG for SOP retrieval. Governance plane: lineage, ABAC, quality SLIs.
+- **Data Contract Highlights**: schema/versioning; freshness SLO 99.9% <5m; completeness SLO ≥99.5% wells/day; accuracy SLO ≥98% valid pressure range.
+- **Governance/Compliance**: masking at Silver for personnel references; ABAC by asset/region; DPIA if model decisions affect worker scheduling.
+- **90‑Day Pilot Target**: one compressor asset; alert precision ≥90%; false alarms −50%; ROI quantified against avoided downtime.
 
 ---
 
-### Case Study 2: Telecommunications Churn Prediction
+### Case Study 2: Procurement (EPICFORGE)
 
-- **Problem**: High customer churn rates in competitive prepaid mobile segments.
+- **Current Pain Points**:
+  - Manual, time‑consuming RFQ creation, vendor communications, and bid analysis → weeks of cycle time and errors
+  - Slow vendor response rates due to complex submissions and low transparency
+  - Inconsistent data and formats across vendors; difficult comparisons; risk of omissions
+  - Lack of analytics on spend patterns, vendor performance, and optimization opportunities
+- **EPICFORGE Solution**:
+  - AI‑powered automation: intelligent RFQ generation, automated vendor matching, smart bid analysis (manual effort −60%)
+  - Seamless vendor experience: portal with template‑based submissions (response rate +40%)
+  - Standardized workflows: template‑driven processes ensure consistency and comparable bids
+  - Comprehensive analytics: real‑time spend, vendor performance, and savings opportunities
 - **Data Products**:
-    - **User Intent Signals Product**: Real-time usage patterns.
-    - **Offer Catalog Product**: Available retention offers.
-    - **Customer 360 Product**: A holistic customer view with embedded privacy controls.
-- **Key Controls**: Policy-to-control mapping for marketing consent; API throttling to manage system load; detailed audit trails for all offers made.
-- **Target KPIs**: Reduce monthly churn by **-2-5 percentage points**; increase Average Revenue Per User (ARPU) by **+3-6%** through targeted upsells.
-- **Architecture**: Streaming feature engineering for low-latency scoring and an explainability layer to guide call center agents.
+  - **RFQ Master Product**: structured RFQ with schema and semantics
+  - **Vendor Profile/Product**: capabilities, certifications, performance history
+  - **Bid Submission Product**: normalized line‑items and terms
+  - **Spend Analytics Product**: aggregated transactions and savings realized
+- **Data Contract Highlights**: schema and mandatory semantics; freshness SLO (bid window updates <1m); completeness SLO ≥99% required fields; accuracy rules for currency/tax calculations.
+- **Architecture**: Event‑driven ingestion from portal → Silver normalization → Gold analytics; optional RAG for policy/T&Cs lookup; lineage for auditability.
+- **Governance/Compliance**: ABAC by role (ProcurementManager, Auditor) and purpose (Sourcing vs Reporting); PII tokenization for vendor contacts at Silver; DPIA if processing sensitive identifiers.
+- **KPIs**: cycle time −30–60%; vendor participation +40%; negotiated savings uplift; maverick spend −10–20%.
+- **90‑Day Pilot Target**: one category (e.g., MRO spares) with 10 vendors; implement portal templates, normalization pipeline, and analytics dashboard; demonstrate cycle‑time reduction and savings.
 
 ---
 
@@ -41,4 +56,7 @@ These case studies provide concrete examples that we will analyze throughout the
     - **Parts Inventory Product**: Availability of replacement parts.
 - **Key Controls**: Customer consent management for data usage; localized language support for field operations using the N-ATLAS model.
 - **Target KPIs**: Reduce Mean Time To Repair (MTTR) by **-20-35%**; increase total energy yield by **+3-7%**.
-- **Architecture**: Edge buffering for intermittent connectivity, a centralized lakehouse for analytics, and a multilingual RAG system for field technician manuals.
+- **Architecture**: Edge buffering for intermittent connectivity → central lakehouse; anomaly detection; multilingual RAG for manuals.
+- **Data Contract Highlights**: telemetry schema; freshness SLO <5m; completeness SLO ≥99%; accuracy rules per device class.
+- **Governance/Compliance**: consent management; localized language support with N‑ATLAS; ABAC by region/installer.
+- **90‑Day Pilot Target**: 1,000 inverters; MTTR −20–35%; yield +3–7%; publish DPO‑owned contract and SLOs.

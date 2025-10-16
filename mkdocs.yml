@@ -1,4 +1,4 @@
-site_name: WTAI
+site_name: Workforce Transformation & Analytics • Implementation Planning & Governance
 site_url: https://github.com/Adrianthebeloved/WTAI
 repo_url: https://github.com/Adrianthebeloved/WTAI
 theme:
@@ -45,11 +45,22 @@ extra:
       link: https://github.com/Adrianthebeloved/WTAI
 nav:
   - Home: index.md
-  - Masterclass:
-      - Day 4 — Workforce Transformation & Analytics:
-          - Overview: day-4.md
-          - Hour 1 — Why Now?: day4-why-now.md
-      - Day 5 — Implementation Planning & Governance: day-5.md
+  - Day 4 — Workforce Transformation & Analytics:
+      - Overview: day-4.md
+      - Why Now?: day4-why-now.md
+      - Reference Architectures for Analytics in Operations: day4-reference-architectures.md
+      - "AI in Operations: PdM, Optimization, and Agentic Workflows": day4-ai-in-operations.md
+      - "The Data Product Operating Model & Data Contracts": day4-data-product-and-contracts.md
+      - "Workforce and Culture: Roles, Skills, and Adoption": day4-workforce-and-culture.md
+      - "Interactive Workshop: Human-Machine Collaboration Redesign": day4-workshop-human-machine.md
+  - Day 5 — Implementation Planning & Governance:
+      - Overview: day-5.md
+      - Investment Strategy and Portfolio Shaping: day5-investment-portfolio.md
+      - "Governance for the AI Era": day5-governance-ai-era.md
+      - "Compliance Focus: Nigeria NDPA 2023 and Global Parity": day5-ndpa-compliance.md
+      - "Quality, Observability, and Reliability": day5-quality-observability.md
+      - "Platform Blueprint and Reference Implementation Plan": day5-platform-blueprint.md
+      - "Interactive Workshop: Pilot Plan to Production Path": day5-workshop-pilot-to-production.md
   - Case Studies: case-studies.md
   - Worksheets: worksheets.md
   - Resources: resources.md

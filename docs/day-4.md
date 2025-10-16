@@ -1,4 +1,4 @@
-# Day 4: From Strategy to Operating Model
+# From Strategy to Operating Model
 
 Welcome to Day 4. Today, we bridge the gap between business strategy and technical execution. We will focus on how to identify high-value opportunities for data and AI, select the right architectural patterns to deliver on them, and establish an operating model that treats data as a core business product. Each session is designed to be interactive, culminating in a workshop where you will design a 90-day pilot project.
 
