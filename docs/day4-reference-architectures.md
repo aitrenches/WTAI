@@ -30,7 +30,9 @@ flowchart LR
 ```
 
 - Bronze (raw): complete historical archive; raw sensor readings, JSON from apps, reports.
+
 - Silver (cleansed & conformed): standardized formats, joins, validated single source of truth.
+
 - Gold (aggregated & business‑ready): KPI‑level views feeding BI and executive reporting.
 
 ## Handling velocity: streaming and edge analytics
@@ -56,7 +58,9 @@ flowchart LR
 
 Examples
 - O&G: edge detects pressure anomalies; alerts via streaming bus; summaries land in lakehouse.
+
 - Renewables: edge buffers telemetry during outages, streams when restored.
+
 - Telecom: streaming feeds real‑time churn scoring.
 
 ## Unlocking unstructured data: retrieval architectures

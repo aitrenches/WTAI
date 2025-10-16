@@ -1302,9 +1302,15 @@
   style S fill:#C0C0C0,stroke:#333
   style G fill:#FFD700,stroke:#333</code></pre>
 <ul>
-<li>Bronze (raw): complete historical archive; raw sensor readings, JSON from apps, reports.</li>
-<li>Silver (cleansed &amp; conformed): standardized formats, joins, validated single source of truth.</li>
-<li>Gold (aggregated &amp; business‑ready): KPI‑level views feeding BI and executive reporting.</li>
+<li>
+<p>Bronze (raw): complete historical archive; raw sensor readings, JSON from apps, reports.</p>
+</li>
+<li>
+<p>Silver (cleansed &amp; conformed): standardized formats, joins, validated single source of truth.</p>
+</li>
+<li>
+<p>Gold (aggregated &amp; business‑ready): KPI‑level views feeding BI and executive reporting.</p>
+</li>
 </ul>
 <h2 id="handling-velocity-streaming-and-edge-analytics">Handling velocity: streaming and edge analytics<a class="headerlink" href="#handling-velocity-streaming-and-edge-analytics" title="Permanent link">&para;</a></h2>
 <p>Operational use cases need data in motion. A streaming bus ingests high‑velocity events; edge computing filters/aggregates near sources to reduce latency and bandwidth while keeping critical alerts real‑time.</p>
@@ -1324,9 +1330,15 @@
   Q --&gt; LH
   Q --&gt; APP</code></pre>
 <p>Examples
-- O&amp;G: edge detects pressure anomalies; alerts via streaming bus; summaries land in lakehouse.
-- Renewables: edge buffers telemetry during outages, streams when restored.
-- Telecom: streaming feeds real‑time churn scoring.</p>
+- O&amp;G: edge detects pressure anomalies; alerts via streaming bus; summaries land in lakehouse.</p>
+<ul>
+<li>
+<p>Renewables: edge buffers telemetry during outages, streams when restored.</p>
+</li>
+<li>
+<p>Telecom: streaming feeds real‑time churn scoring.</p>
+</li>
+</ul>
 <h2 id="unlocking-unstructured-data-retrieval-architectures">Unlocking unstructured data: retrieval architectures<a class="headerlink" href="#unlocking-unstructured-data-retrieval-architectures" title="Permanent link">&para;</a></h2>
 <p>Hybrid search powers RAG{:abbr="Retrieval‑Augmented Generation"} systems: combine keyword search for precision with vector search for semantic similarity.</p>
 <pre class="mermaid"><code>sequenceDiagram
