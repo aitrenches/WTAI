@@ -46,7 +46,9 @@ extra:
 nav:
   - Home: index.md
   - Masterclass:
-      - Day 4 — Workforce Transformation & Analytics: day-4.md
+      - Day 4 — Workforce Transformation & Analytics:
+          - Overview: day-4.md
+          - Hour 1 — Why Now?: day4-why-now.md
       - Day 5 — Implementation Planning & Governance: day-5.md
   - Case Studies: case-studies.md
   - Worksheets: worksheets.md
