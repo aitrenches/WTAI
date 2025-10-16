@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://&lt;your-username&gt;.github.io/WTAI/</loc>
-         <lastmod>2025-10-14</lastmod>
+         <loc>https://github.com/Adrianthebeloved/WTAI/</loc>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://&lt;your-username&gt;.github.io/WTAI/architecture/</loc>
-         <lastmod>2025-10-14</lastmod>
+         <loc>https://github.com/Adrianthebeloved/WTAI/case-studies/</loc>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://&lt;your-username&gt;.github.io/WTAI/getting-started/</loc>
-         <lastmod>2025-10-14</lastmod>
+         <loc>https://github.com/Adrianthebeloved/WTAI/day-4/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/Adrianthebeloved/WTAI/day-5/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/Adrianthebeloved/WTAI/glossary/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/Adrianthebeloved/WTAI/resources/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/Adrianthebeloved/WTAI/worksheets/</loc>
+         <lastmod>2025-10-16</lastmod>
     </url>
 </urlset>

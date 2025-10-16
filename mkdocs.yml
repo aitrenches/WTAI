@@ -21,7 +21,12 @@ theme:
 markdown_extensions:
   - admonition
   - codehilite
-  - pymdownx.superfences
+  - attr_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.details
   - pymdownx.critic
   - pymdownx.tasklist
@@ -40,5 +45,10 @@ extra:
       link: https://github.com/Adrianthebeloved/WTAI
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
-  - Architecture: architecture.md
+  - Masterclass:
+      - Day 4 — Workforce Transformation & Analytics: day-4.md
+      - Day 5 — Implementation Planning & Governance: day-5.md
+  - Case Studies: case-studies.md
+  - Worksheets: worksheets.md
+  - Resources: resources.md
+  - Glossary: glossary.md
