@@ -27,9 +27,9 @@ flowchart LR
   Monitoring --> Evidence
 ```
 
-Downloadable stubs (to be added)
-- data_product_canvas.md
-- data_contract_template.md
-- rag_risk_register.md
-- roi_calculator.xlsx
-- lineage_checklist.md
+Downloads
+- [Data Product Canvas](worksheets/data_product_canvas.md)
+- [Data Contract Template](worksheets/data_contract_template.md)
+- [RAG Risk Register](worksheets/rag_risk_register.md)
+- [ROI Calculator](worksheets/roi_calculator.xlsx)
+- [Lineage & Observability Checklist](worksheets/lineage_checklist.md)
