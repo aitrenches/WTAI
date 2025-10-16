@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#advanced-data-management-masterclass-day-5" class="md-skip">
+        <a href="#day-5-implementation-governance-and-compliance" class="md-skip">
           Skip to content
         </a>
       
@@ -484,6 +484,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Day 5 — Implementation Planning & Governance
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -495,6 +508,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Outcomes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agenda
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -616,6 +666,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Outcomes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agenda
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -633,86 +709,63 @@
   
 
 
-<h1 id="advanced-data-management-masterclass-day-5">Advanced Data Management Masterclass — Day 5<a class="headerlink" href="#advanced-data-management-masterclass-day-5" title="Permanent link">&para;</a></h1>
-<p>Audience: Executives and IT; Nigerian O&amp;G focus with sector-agnostic parallels.</p>
-<p>Learning outcomes
-- Prioritize a pilot portfolio with ROI and risk scoring (FinOps-aligned)
-- Define minimal viable control set for AI/data governance and ownership model
-- Establish data SLOs/SLIs, lineage, and observability practices; platform roadmap
-- Integrate NDPA 2023/NDPC obligations into delivery lifecycle</p>
-<p>Agenda (6 × 60 minutes)
-1) Investment strategy and portfolio shaping (ROI/risk, make/buy/extend)
-2) Governance for the AI era (policy-to-control mapping, registers, access)
-3) Compliance focus: Nigeria NDPA 2023, NDPC; global parity considerations
-4) Quality, observability, reliability (SLOs, incidents, replay)
-5) Platform blueprint and reference implementation plan (mesh vs fabric; hybrid)
-6) Interactive: pilot plan to production path (architecture, controls, cost, RACI)</p>
-<p>Governance control layers
-<pre class="mermaid"><code>flowchart TB
-  P[Policies &amp; Standards] --&gt; C[Controls Catalog]
-  C --&gt; T[Technical Controls]
-  C --&gt; PR[Process Controls]
-  T --&gt; DP[Data Plane: access, masking, tokenization]
-  T --&gt; MP[Model Plane: evals, monitoring, registry]
-  PR --&gt; OR[Operating Routines: review, approvals]
-  DP --&gt; LN[Lineage]
-  DP --&gt; QL[Quality/SLIs]
-  MP --&gt; EV[Evals/Red Team]
-  OR --&gt; AR[Audit &amp; Reporting]</code></pre></p>
-<p>End-to-end lineage and observability
-<pre class="mermaid"><code>flowchart LR
-  SRC[Sources] --&gt; ING[Ingest]
-  ING --&gt; BR[Bronze]
-  BR --&gt; SL[Silver]
-  SL --&gt; GL[Gold]
-  SL --&gt; FT[Feature/Embedding Store]
-  GL --&gt; BI[BI/Semantic Layer]
-  FT --&gt; SV[Serving]
-  subgraph Observability
-    MET[SLIs/SLOs]
-    LG[OpenLineage]
-    AL[Alerts]
-  end
-  BR --- LG
-  SL --- MET
-  SV --- AL</code></pre></p>
-<p>Nigeria compliance quick notes
-- NDPA 2023 principles (lawfulness, fairness, purpose limitation, data minimization)
-- NDPC registration/licensing considerations; cross-border transfers and safeguards
-- Sector nuances for oil &amp; gas (safety, integrity, critical infrastructure data)</p>
-<p>Notes
-- Keep platform/tool agnostic; map to controls in your stack
-- Merge governance with delivery workflow to avoid "compliance after the fact"</p>
-<p>Analyze-level learning objectives (Bloom’s level 4)
-- Analyze portfolio trade-offs across ROI, risk, time-to-value, and dependency constraints.
-- Deconstruct governance into policy, technical, and process controls aligned to risks.
-- Differentiate lineage, quality, and access controls for O&amp;G vs telecom vs renewable scenarios.
-- Attribute compliance obligations to lifecycle stages and artifacts (DPIA, registers).
-- Compare platform roadmap options (mesh, fabric, centralized) under cost and skill constraints.</p>
-<p>Nigeria compliance (NDPA 2023 and NDPC) — practitioner view
-- Core principles: lawfulness, fairness, transparency, purpose limitation, data minimization, accuracy, storage limitation, integrity/confidentiality, accountability.
-- Roles: controller vs processor; ensure contractual controls and subprocessors are documented.
-- Rights: access, rectification, erasure, restriction, portability, objection; include request handling SLAs.
-- DPIA triggers: high-risk processing (e.g., large-scale monitoring, sensitive categories, automated decisions with significant effects).
-- Cross-border transfers: document mechanisms and safeguards; ensure contractual clauses and risk assessments are in place when data leaves Nigeria.
-- Registration/licensing: validate NDPC requirements for certain processing activities/entities.
-- Sector nuances for O&amp;G: safety-critical data, operational integrity, critical infrastructure considerations and incident reporting.</p>
-<p>Cross-industry scenarios for governance and controls
-- O&amp;G: subsurface data access with attribute-based policies; model register and evaluation gates for safety-related models.
-- Telecommunications: PII-rich usage data with minimization and aggregation; throttled real-time scoring.
-- Renewable energy (Nigeria): customer and asset telemetry with consent management; localized support and multi-language documentation via N-ATLAS.</p>
-<p>Platform blueprint — optional Azure/SAP mapping (keep patterns portable)
-- Data plane: streaming ingestion, lakehouse zones, feature/embedding store, serving endpoints.
-- Governance plane: catalog/lineage, data access policies, quality SLOs, audit and reporting.
-- SAP integration: CDC/replication from ECC/S4 modules; harmonization into product schemas.</p>
-<p>Workshop: pilot to production (analyze)
-- Inputs: Day 4 pilot statement, risk log, control plan.
-- Tasks: define architecture, map controls, estimate cost-to-serve, assign RACI, plan rollout.
-- Outputs: executive one-pager; IT implementation brief; compliance checklist for NDPA.</p>
-<p>Artifacts and checklists
-- Governance controls checklist; DPIA template; data transfer assessment outline.
-- Lineage + observability checklist; SLO definition guide; incident playbook stub.
-- Platform roadmap storyboard comparing 2–3 implementation paths.</p>
+<h1 id="day-5-implementation-governance-and-compliance">Day 5: Implementation, Governance, and Compliance<a class="headerlink" href="#day-5-implementation-governance-and-compliance" title="Permanent link">&para;</a></h1>
+<p>Welcome to Day 5. Today, we get practical about implementation. We will cover how to prioritize your data and AI portfolio, establish robust governance and compliance frameworks—with a specific focus on Nigeria's NDPA 2023—and create a tangible platform roadmap. The day culminates in a workshop where you will transform your pilot idea from Day 4 into a concrete implementation plan.</p>
+<hr />
+<h2 id="learning-outcomes">Learning Outcomes<a class="headerlink" href="#learning-outcomes" title="Permanent link">&para;</a></h2>
+<p>By the end of today, you will be able to:</p>
+<ul>
+<li><strong>Prioritize</strong> a pilot portfolio using ROI and risk scoring methods.</li>
+<li><strong>Define</strong> a minimal viable control set for AI and data governance, including a clear ownership model.</li>
+<li><strong>Establish</strong> data SLOs/SLIs, lineage, and observability practices to ensure reliability.</li>
+<li><strong>Integrate</strong> Nigeria Data Protection Act (NDPA) 2023 obligations directly into your delivery lifecycle.</li>
+</ul>
+<hr />
+<h2 id="agenda">Agenda<a class="headerlink" href="#agenda" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Investment Strategy and Portfolio Shaping</strong></p>
+<ul>
+<li>Focus: Using FinOps principles to score and prioritize data/AI initiatives.</li>
+<li>Artifacts: ROI Calculator, Risk Log.</li>
+</ul>
+</li>
+<li>
+<p><strong>Governance for the AI Era</strong></p>
+<ul>
+<li>Focus: Mapping policies to technical controls for data, models, and access in a platform-agnostic way.</li>
+<li>Artifacts: Governance Controls Checklist.</li>
+</ul>
+</li>
+<li>
+<p><strong>Compliance Focus: Nigeria NDPA 2023 and Global Parity</strong></p>
+<ul>
+<li>Focus: A deep dive into the NDPA 2023, NDPC requirements, and O&amp;G sector nuances.</li>
+<li>Artifacts: DPIA Template, Data Transfer Assessment Outline.</li>
+</ul>
+</li>
+<li>
+<p><strong>Quality, Observability, and Reliability</strong></p>
+<ul>
+<li>Focus: Defining and implementing Service Level Objectives (SLOs) and Indicators (SLIs) for your data products.</li>
+<li>Artifacts: Lineage + Observability Checklist.</li>
+</ul>
+</li>
+<li>
+<p><strong>Platform Blueprint and Reference Implementation Plan</strong></p>
+<ul>
+<li>Focus: Comparing architectural patterns (e.g., mesh vs. fabric) and designing a phased implementation roadmap.</li>
+<li>Artifacts: Platform Roadmap Storyboard.</li>
+</ul>
+</li>
+<li>
+<p><strong>Interactive Workshop: Pilot Plan to Production Path</strong></p>
+<ul>
+<li>Focus: Creating an executive one-pager and an IT implementation brief for your pilot project.</li>
+<li>Artifacts: Executive One-Pager, Implementation Brief.</li>
+</ul>
+</li>
+</ol>
 
 
 

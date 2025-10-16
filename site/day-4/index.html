@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#advanced-data-management-masterclass-day-4" class="md-skip">
+        <a href="#day-4-from-strategy-to-operating-model" class="md-skip">
           Skip to content
         </a>
       
@@ -461,6 +461,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Day 4 — Workforce Transformation & Analytics
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -472,6 +485,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Outcomes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agenda
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -616,6 +666,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#learning-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Outcomes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agenda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agenda
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -633,107 +709,63 @@
   
 
 
-<h1 id="advanced-data-management-masterclass-day-4">Advanced Data Management Masterclass — Day 4<a class="headerlink" href="#advanced-data-management-masterclass-day-4" title="Permanent link">&para;</a></h1>
-<p>Audience: Nigerian oil and gas leaders and IT practitioners; sector-agnostic parallels included.</p>
-<p>Learning outcomes
-- Align AI/data investments to KPI trees (uptime, OPEX, integrity, safety, revenue enablement)
-- Select an architecture baseline with clear non-functionals (latency, SLOs, cost)
-- Draft one data product and contract; define evaluation and control points for AI-enabled workflows</p>
-<p>Agenda (6 × 60 minutes)
-1) Why now: business value from data + AI (O&amp;G and cross-industry)
-2) Reference architectures for analytics in operations (lakehouse, streaming/edge, vector + keyword, knowledge graph)
-3) AI in operations: PdM, optimization, agentic workflows with human-in-the-loop and guardrails
-4) Data product operating model and data contracts; observability and SLOs
-5) Workforce and culture: roles, skills, adoption mechanics
-6) Interactive workshop: human–machine collaboration redesign and 90‑day pilot target</p>
-<p>Example architecture
-<pre class="mermaid"><code>flowchart LR
-  subgraph Ingestion
-    S1[SCADA/IoT] --&gt; G1[Gateway/Edge]
-    S2[Enterprise Apps] --&gt; Q[Streaming Bus]
-  end
-  G1 --&gt; Q
-  Q --&gt; BR[Batch/Stream Refinement]
-  BR --&gt; LZ[Lakehouse Bronze]
-  LZ --&gt; LS[Lakehouse Silver]
-  LS --&gt; LG[Lakehouse Gold]
-  LS --&gt; FS[Feature/Embedding Store]
-  FS --&gt; SV[Serving/API]
-  LG --&gt; BI[BI/Semantics]
-  BI --&gt; Users
-  SV --&gt; Apps
-  subgraph Governance
-    GL[Lineage]
-    AC[Access/ABAC]
-    QL[Quality/SLIs]
-  end
-  LZ --- GL
-  LS --- AC
-  LG --- QL</code></pre></p>
-<p>RAG governance flow
-<pre class="mermaid"><code>sequenceDiagram
-  participant U as User/Operator
-  participant A as App/Agent
-  participant R as Retriever
-  participant V as Vector+Catalog
-  participant P as Policy/Guardrails
-  participant L as LLM
-
-  U-&gt;&gt;A: Query / Task
-  A-&gt;&gt;P: Policy check (PII, scope, rate)
-  P--&gt;&gt;A: Permit with constraints
-  A-&gt;&gt;R: Retrieve with filters (domain, freshness)
-  R-&gt;&gt;V: Hybrid search (keyword + vector)
-  V--&gt;&gt;R: Context (ranked, deduped)
-  R--&gt;&gt;A: Context bundle
-  A-&gt;&gt;L: Prompt + context
-  L--&gt;&gt;A: Response
-  A-&gt;&gt;P: Output checks (toxicity, leakage)
-  P--&gt;&gt;A: Approve/Redact
-  A--&gt;&gt;U: Answer + trace (sources, lineage)</code></pre></p>
-<p>Notes
-- Platform/tool agnostic patterns; map to your stack as needed
-- Nigeria compliance integrated on Day 5; apply guardrails from the start</p>
-<p>Audience stratification
-- Executives and managers: prioritize value mapping, risk posture, and operating model decisions.
-- Data leaders and stewards: define product ownership, SLOs/SLIs, and contract policies.
-- Engineers and developers: design pipelines, retrieval, observability, and controls that satisfy contracts and governance.</p>
-<p>Analyze-level learning objectives (Bloom’s level 4)
-- Analyze trade-offs between mesh vs fabric vs centralized lakehouse for your domains.
-- Differentiate retrieval strategies (keyword, vector, hybrid) for safety-critical vs knowledge tasks.
-- Deconstruct an operations use case (e.g., well integrity) into data products, SLOs, and contracts.
-- Attribute root causes for data incidents using lineage and observability signals.
-- Compare human-in-the-loop checkpoints for agentic workflows across risk classes.</p>
-<p>Session details with cross-industry examples
-1) Why now: business value from data + AI
-   - O&amp;G: reduce unplanned downtime in upstream equipment; optimize production allocation.
-   - Telecommunications: reduce churn via real-time intent detection and next best action.
-   - Renewable energy (Nigeria): manage distributed solar assets and load forecasting amid rising solar adoption; optimize inverter health and customer service.</p>
-<p>2) Reference architectures for analytics in operations
-   - Baselines: lakehouse + medallion, streaming/edge ingestion, feature/embedding stores, knowledge graph joins.
-   - Retrieval: hybrid (BM25 + vector), domain filters, freshness constraints.
-   - Decision: synchronous vs asynchronous serving; SLOs for latency and freshness.
-   - Optional mapping (Azure/SAP without lock-in): Event Hubs/IoT, ADLS/Lakehouse, governance with Purview-like catalogs; SAP ECC/S4 data via CDC/connectors.</p>
-<p>3) AI in operations and agentic workflows (with guardrails)
-   - Predictive maintenance pipelines: sensor QA, feature creation, model registry, retraining triggers.
-   - Optimization: scheduling, energy balancing, spares planning; constraint-aware.
-   - RAG/LLM: context quality checks, safety filters, output validation, sources trace.
-   - Local relevance: N-ATLAS (open-source, Yoruba/Hausa/Igbo/Nigerian-accented English) for multilingual field support and knowledge access.</p>
-<p>4) Data product operating model and data contracts
-   - Data-as-a-product: ownership, backlog, SLAs vs SLOs, deprecation policy.
-   - Contracts: schema, semantics, freshness, quality thresholds, PII handling, incident process.
-   - Observability: SLI taxonomy (completeness, accuracy, timeliness), canary data, backfill rules.</p>
-<p>5) Workforce and culture
-   - Roles: data product manager, platform team, domain stewards, governance council.
-   - Adoption: playbooks for change management, incentives tied to KPI improvements.</p>
-<p>6) Workshop: human–machine collaboration redesign (analyze)
-   - Task: choose one process (e.g., well integrity monitoring, tower outage response, solar asset maintenance), identify decision points and controls, compute expected KPI lift and risk.
-   - Deliverables: 90‑day pilot statement, risk log, control plan, data product draft, contract SLOs.</p>
-<p>Worksheets and artifacts
-- KPI tree template; value hypothesis canvas.
-- Data product canvas; data contract template.
-- RAG risk register; evaluation rubric; lineage/observability checklist.
-- Optional Azure/SAP mapping worksheet to keep design vendor-agnostic.</p>
+<h1 id="day-4-from-strategy-to-operating-model">Day 4: From Strategy to Operating Model<a class="headerlink" href="#day-4-from-strategy-to-operating-model" title="Permanent link">&para;</a></h1>
+<p>Welcome to Day 4. Today, we bridge the gap between business strategy and technical execution. We will focus on how to identify high-value opportunities for data and AI, select the right architectural patterns to deliver on them, and establish an operating model that treats data as a core business product. Each session is designed to be interactive, culminating in a workshop where you will design a 90-day pilot project.</p>
+<hr />
+<h2 id="learning-outcomes">Learning Outcomes<a class="headerlink" href="#learning-outcomes" title="Permanent link">&para;</a></h2>
+<p>By the end of today, you will be able to:</p>
+<ul>
+<li><strong>Align</strong> AI and data investments to specific business KPI trees (e.g., uptime, OPEX, safety).</li>
+<li><strong>Select</strong> a baseline architecture with clear non-functional requirements like latency, SLOs, and cost.</li>
+<li><strong>Draft</strong> a data product definition and its corresponding data contract.</li>
+<li><strong>Define</strong> evaluation criteria and control points for AI-driven workflows, including human-in-the-loop systems.</li>
+</ul>
+<hr />
+<h2 id="agenda">Agenda<a class="headerlink" href="#agenda" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Why Now: Business Value from Data + AI</strong></p>
+<ul>
+<li>Focus: Connecting data initiatives directly to O&amp;G value drivers and KPIs.</li>
+<li>Artifacts: KPI Tree Template, Value Hypothesis Canvas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reference Architectures for Analytics in Operations</strong></p>
+<ul>
+<li>Focus: Exploring modern, platform-agnostic patterns like the lakehouse, streaming, and vector search.</li>
+<li>Artifacts: Reference Architecture Map.</li>
+</ul>
+</li>
+<li>
+<p><strong>AI in Operations: PdM, Optimization, and Agentic Workflows</strong></p>
+<ul>
+<li>Focus: Practical application of AI, from predictive maintenance (PdM) to LLM-based agents, with essential guardrails.</li>
+<li>Artifacts: RAG Risk Register, Evaluation Rubric.</li>
+</ul>
+</li>
+<li>
+<p><strong>The Data Product Operating Model &amp; Data Contracts</strong></p>
+<ul>
+<li>Focus: Shifting from project-based delivery to a product-oriented model for data assets.</li>
+<li>Artifacts: Data Product Canvas, Data Contract Template.</li>
+</ul>
+</li>
+<li>
+<p><strong>Workforce and Culture: Roles, Skills, and Adoption</strong></p>
+<ul>
+<li>Focus: Identifying the new roles and skills required to succeed, and planning for cultural change.</li>
+<li>Artifacts: RACI Template, Communications Plan Outline.</li>
+</ul>
+</li>
+<li>
+<p><strong>Interactive Workshop: Human-Machine Collaboration Redesign</strong></p>
+<ul>
+<li>Focus: Applying the day's concepts to a real-world operational process to define a 90-day pilot target.</li>
+<li>Artifacts: Workshop Board Export.</li>
+</ul>
+</li>
+</ol>
 
 
 
