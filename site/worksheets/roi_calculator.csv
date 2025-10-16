@@ -1,0 +1,20 @@
+Metric,Value,Unit,Notes
+Baseline cycle time,21,days,Average RFQ duration pre-pilot
+Target cycle time,14,days,Pilot target (-33%)
+Baseline vendor response rate,35,percent,Average unique vendor responses
+Target vendor response rate,49,percent,Target (+40%)
+Events per quarter,8,RFQs,Category: MRO spares
+Cost per day of delay,2000,USD,Estimated carrying/ops cost
+Savings uplift from better competition,5,percent,Negotiated savings improvement
+Spend per event,150000,USD,Average RFQ spend
+
+Derived,Formula,Result,Unit
+Cycle time days saved per event,=Baseline cycle time - Target cycle time,7,days
+Cycle time savings per event,=Cycle time days saved per event * Cost per day of delay,14000,USD
+Quarterly cycle time savings,=Cycle time savings per event * Events per quarter,112000,USD
+Savings uplift per event,=Spend per event * Savings uplift from better competition,7500,USD
+Quarterly savings uplift,=Savings uplift per event * Events per quarter,60000,USD
+Quarterly benefit total,=Quarterly cycle time savings + Quarterly savings uplift,172000,USD
+Quarterly platform & ops cost,50000,USD,Estimate of platform + engineering
+Quarterly net benefit,=Quarterly benefit total - Quarterly platform & ops cost,122000,USD
+ROI,=Quarterly net benefit / Quarterly platform & ops cost,2.44x,ratio

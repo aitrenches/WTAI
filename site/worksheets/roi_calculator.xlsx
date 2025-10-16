@@ -1,0 +1,10 @@
+This is a placeholder for an Excel workbook (ROI Calculator).
+
+Suggested sheet layout:
+- Inputs: use-case name, baseline KPI, target KPI, benefit drivers, unit values, volumes, risk factor
+- Costs: engineering (internal/external), licenses, cloud (storage/compute/services), change management
+- ROI: net benefit, payback period, IRR (optional), quadrant (value-risk)
+
+CSV fallback (can be opened in Excel):
+use_case,baseline_kpi,target_kpi,benefit_amount,cost_total,risk_factor,net_benefit
+example,uptime 92%,uptime 94%,100000,50000,0.8,30000

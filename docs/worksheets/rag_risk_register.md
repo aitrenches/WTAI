@@ -1,30 +1,35 @@
-# RAG Risk Register
+# RAG Risk Register — Procurement (EPICFORGE)
 
-Identify risks, mitigations, owners, and evaluation metrics for Retrieval‑Augmented Generation systems.
+## How to use
+1) Copy this register per application; align risks with your policy corpus and retriever.
+2) Keep mitigations actionable; assign clear owners.
+3) Review metrics weekly; trigger incident steps on threshold.
+
+Identify risks, mitigations, owners, and evaluation metrics for Retrieval‑Augmented Generation in RFQ and policy assistance.
 
 ## 1. Context
-- Product / Application:
-- Owner:
-- Model / Retriever:
+- Product / Application: Vendor portal assistant & policy explainer
+- Owner: Platform Team (RAG framework) + DPO (procurement)
+- Model / Retriever: Local LLM + hybrid search (policy/T&Cs/SOW templates)
 
 ## 2. Risks
 | ID | Risk | Impact (H/M/L) | Likelihood (H/M/L) | Mitigation | Owner |
 |----|------|-----------------|--------------------|------------|-------|
-| R1 | Hallucinated statement |  High | Medium | Output grounding check with citations; thresholded refusal | Platform Team |
-| R2 | Outdated document used |  Medium | Medium | Freshness filters; recency scoring; doc deprecation | DPO |
-| R3 | Sensitive info leakage |  High | Low | PII detection/redaction; policy checks; ABAC | Platform Team |
-| R4 | Toxic or unsafe output |  High | Low | Safety classifier; allowlist/denylist; HITL | Platform Team |
+| R1 | Hallucinated compliance advice in RFQ | High | Medium | Output grounding with citations; refuse if low confidence | Platform |
+| R2 | Use of outdated policy/T&Cs | High | Medium | Freshness filter (≤ 6 months); deprecate old docs | DPO |
+| R3 | Leakage of vendor PII in answers | High | Low | PII detection/redaction policy; ABAC enforced | Platform |
+| R4 | Toxic/biased language to vendors | Medium | Low | Safety filter; inclusive language checker | Platform |
 
 (Add rows as needed)
 
 ## 3. Evaluation rubric
-- Correctness: % grounded answers
-- Relevance: % answers citing top‑k relevant docs
-- Safety: % outputs passing toxicity/leak tests
-- Completeness: % answers covering all requested aspects
+- Correctness: % grounded answers citing current docs
+- Relevance: % answers using the correct policy domain
+- Safety: % outputs passing toxicity/PII checks
+- Completeness: % answers covering all requested RFQ steps
 
 ## 4. Incident response
-- Alerting thresholds:
-- Rollback plan:
-- Communication plan:
+- Alerting thresholds: >1% unsafe or ungrounded outputs/day
+- Rollback plan: disable generation; retrieval‑only fallback
+- Communication plan: notify DPO and legal; vendor comms template
 

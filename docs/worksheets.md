@@ -40,5 +40,8 @@ Downloads
 - [Data Product Canvas](worksheets/data_product_canvas.md)
 - [Data Contract Template](worksheets/data_contract_template.md)
 - [RAG Risk Register](worksheets/rag_risk_register.md)
-- [ROI Calculator](worksheets/roi_calculator.xlsx)
+- [ROI Calculator (CSV)](worksheets/roi_calculator.csv) — [How to Use](worksheets/roi_calculator_instructions.md)
 - [Lineage & Observability Checklist](worksheets/lineage_checklist.md)
+- [Download All Worksheets (ZIP)](worksheets/worksheets_bundle.zip)
+
+Note: A downloadable ZIP bundle of all worksheets can be generated on request.

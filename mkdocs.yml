@@ -62,6 +62,12 @@ nav:
       - "Platform Blueprint and Reference Implementation Plan": day5-platform-blueprint.md
       - "Interactive Workshop: Pilot Plan to Production Path": day5-workshop-pilot-to-production.md
   - Case Studies: case-studies.md
-  - Worksheets: worksheets.md
+  - Worksheets:
+      - Overview: worksheets.md
+      - Data Product Canvas: worksheets/data_product_canvas.md
+      - Data Contract Template: worksheets/data_contract_template.md
+      - RAG Risk Register: worksheets/rag_risk_register.md
+      - ROI Calculator — Instructions: worksheets/roi_calculator_instructions.md
+      - Lineage & Observability Checklist: worksheets/lineage_checklist.md
   - Resources: resources.md
   - Glossary: glossary.md

@@ -1,5 +1,10 @@
 # Lineage & Observability Checklist
 
+## How to use
+1) Complete for each data product before launch; attach links.
+2) Verify PII masking and purpose enforcement; test alerts/runbooks.
+3) Review monthly; record incidents and fixes.
+
 Use this to ensure end‑to‑end traceability and reliable operations.
 
 ## Scope

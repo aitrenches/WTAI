@@ -1,79 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/</loc>
+         <loc>https://github.com/aitrenches/WTAI/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/case-studies/</loc>
+         <loc>https://github.com/aitrenches/WTAI/case-studies/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day-4/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day-4/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day-5/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day-5/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day4-ai-in-operations/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day4-ai-in-operations/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day4-data-product-and-contracts/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day4-data-product-and-contracts/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day4-reference-architectures/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day4-reference-architectures/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day4-why-now/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day4-why-now/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day4-workforce-and-culture/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day4-workforce-and-culture/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day4-workshop-human-machine/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day4-workshop-human-machine/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day5-governance-ai-era/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day5-governance-ai-era/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day5-investment-portfolio/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day5-investment-portfolio/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day5-ndpa-compliance/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day5-ndpa-compliance/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day5-platform-blueprint/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day5-platform-blueprint/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day5-quality-observability/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day5-quality-observability/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/day5-workshop-pilot-to-production/</loc>
+         <loc>https://github.com/aitrenches/WTAI/day5-workshop-pilot-to-production/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/glossary/</loc>
+         <loc>https://github.com/aitrenches/WTAI/glossary/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/resources/</loc>
+         <loc>https://github.com/aitrenches/WTAI/resources/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
     <url>
-         <loc>https://github.com/Adrianthebeloved/WTAI/worksheets/</loc>
+         <loc>https://github.com/aitrenches/WTAI/worksheets/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/aitrenches/WTAI/worksheets/data_contract_template/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/aitrenches/WTAI/worksheets/data_product_canvas/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/aitrenches/WTAI/worksheets/lineage_checklist/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/aitrenches/WTAI/worksheets/rag_risk_register/</loc>
+         <lastmod>2025-10-16</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/aitrenches/WTAI/worksheets/roi_calculator_instructions/</loc>
          <lastmod>2025-10-16</lastmod>
     </url>
 </urlset>
