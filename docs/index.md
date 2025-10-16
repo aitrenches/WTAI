@@ -17,7 +17,10 @@ Start here
 Tools and references
 
 - [Case Studies](case-studies.md)
+
 - [Worksheets](worksheets.md)
+
 - [Resources](resources.md)
+
 - [Glossary](glossary.md)
 
